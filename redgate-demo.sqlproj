@@ -312,6 +312,7 @@
     <None Include="Unsupported\Functions\ufnLeadingZeros.sql" />
     <None Include="Migrations\1.1.0-Changes\readme.txt" />
     <None Include="Migrations\1.1.0-Changes\001_20220119-1740_sanilreddy.sql" />
+    <None Include="Migrations\1.1.0-Changes\002_20220124-1749_sanilreddy.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Pre-Deployment\01_Initialize_Deployment.sql" />

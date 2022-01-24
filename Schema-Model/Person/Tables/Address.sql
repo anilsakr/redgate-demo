@@ -14,7 +14,8 @@ CREATE TABLE [Person].[Address]
 [SpatialLocation] [sys].[geography] NULL,
 [rowguid] [uniqueidentifier] NOT NULL ROWGUIDCOL CONSTRAINT [DF_Address_rowguid] DEFAULT (newid()),
 [ModifiedDate] [datetime] NOT NULL CONSTRAINT [DF_Address_ModifiedDate] DEFAULT (getdate()),
-[Email] [nchar] (10) NULL
+[Email] [nchar] (10) NULL,
+[Mobile] [nchar] (10) NULL
 )
 GO
 ALTER TABLE [Person].[Address] ADD CONSTRAINT [PK_Address_AddressID] PRIMARY KEY CLUSTERED ([AddressID])
