@@ -11,6 +11,8 @@ node {
  
     def RELEASE_ARTIFACT_PATH = 'Release'
     powershell 'Write-Output "Hello, World!"'
+    def msg = powershell(returnStdout: true, script: 'Write-Output "PowerShell is mighty!"')
+    println msg
     stage ('Build') {
         checkout scm
  
