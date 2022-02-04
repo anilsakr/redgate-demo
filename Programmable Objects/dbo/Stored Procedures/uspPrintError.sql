@@ -22,6 +22,39 @@ BEGIN
           ', State ' + CONVERT(varchar(5), ERROR_STATE()) + 
           ', Procedure ' + ISNULL(ERROR_PROCEDURE(), '-') + 
           ', Line ' + CONVERT(varchar(5), ERROR_LINE());
+		  PRINT 'another line'
+
+		  INSERT INTO [dbo].[Address]
+           ([column1]
+           ,[column2]
+           ,[column3]
+           ,[column4]
+           ,[column5]
+           ,[column6],
+		   [column7], [column8], [column9])
+     VALUES
+           (1,         'a',     'b','c',2,'d', 'e','f', 'g'
+        )
+
+
+
+		-- person.address
+
+
+INSERT INTO [Person].[AddressType]
+           ([Name]
+           ,[rowguid]
+           ,[ModifiedDate])
+     VALUES(
+           'anil',
+           'B84F78B1-4EFE-4A0E-8CB7-70E9F112F786',
+          SYSUTCDATETIME())
+
+
+
+
+
+
     PRINT ERROR_MESSAGE();
 END;
 GO
