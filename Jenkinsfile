@@ -10,10 +10,7 @@ node {
     def PRODUCTION_DATABASE = 'AdventureWorks'
  
     def RELEASE_ARTIFACT_PATH = 'Release'
-    def PowerShell(psCmd) {
-    psCmd=psCmd.replaceAll("%", "%%")
-    bat "powershell.exe -NonInteractive -ExecutionPolicy Bypass -Command \"\$ErrorActionPreference='Stop';[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;$psCmd;EXIT \$global:LastExitCode\""
-}
+    powershell 'Write-Output "Hello, World!"'
     stage ('Build') {
         checkout scm
  
