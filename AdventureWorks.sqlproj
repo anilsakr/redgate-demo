@@ -367,6 +367,8 @@
     <None Include="Programmable Objects\dbo\Stored Procedures\InsertUpdate.sql" />
     <None Include="Migrations\1.1.0-Changes\004_20220128-1345_anirbanchatterjee.sql" />
     <None Include="Migrations\1.1.0-Changes\005_20220128-1346_anirbanchatterjee.sql" />
+    <None Include="Migrations\1.1.0-Changes\006_20220128-1822_anirbanchatterjee.sql" />
+    <None Include="Migrations\1.1.0-Changes\007_20220128-1827_anirbanchatterjee.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Pre-Deployment\01_Initialize_Deployment.sql" />

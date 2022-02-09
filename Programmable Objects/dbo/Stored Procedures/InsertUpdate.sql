@@ -6,6 +6,10 @@ SET QUOTED_IDENTIFIER ON
 GO
 SET ANSI_NULLS ON
 GO
+
+
+
+
 create procedure [dbo].[InsertUpdate]  
 (   
    @dept_id INTEGER = NULL,
@@ -31,4 +35,12 @@ UPDATE [HumanResources].[Department] SET
 WHERE [DepartmentID] = @dept_id  
 END  
 end  
+
+
+
+exec InsertUpdate
+@name = 'Production Control',  
+@groupname = 'Manufacturing',  
+@moddate = '2008-04-30 00:00:00.000',
+@StatementType = 'Insert'
 GO
